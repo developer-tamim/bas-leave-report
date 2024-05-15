@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+.table-container {
+    width: calc(100% - 30px); /* Adjust width as needed */
+    overflow-x: scroll;
+    margin-top: 20px; /* Adjust margin as needed */
+  }

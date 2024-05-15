@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BAS | HRM</title>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./bootstrap-5.1.3/css/bootstrap.min.css" />
+    <!-- font-awesome 6.5.2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./sytle.css" />
+  </head>
+  <body style="background-color: #e5e5e5">
+    <!-- <div class="bg-platinum dashboard-space"> -->
+
+    <div class="my-4 px-5">
+      <div class="row sticky-top bg-light">
+
+        
+        <!-- left side end -->
+        <div class="col-10 bg-white">
+          <div class="card my-3" style="border: none">
+            <div class="card-body">
+              <div class="row sticky-top">
+                <div class="col-md-6">
+                  <h2 style="font-weight: 700;">Leave Report</h2>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="searchInput"
+                      placeholder="Search..."
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="table-container">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Name</th>
+                      <th>Designation</th>
+                      <th>Team</th>
+                      <th>Leave</th>
+                      <th>Home Office</th>
+                      <th>Late</th>
+                      <th>Year of Service</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>ISL 12025</td>
+                      <td>Mohammed Kaium Uddin</td>
+                      <td>Co-Originator</td>
+                      <td>Software & Accounting</td>
+                      <td>Leave</td>
+                      <td>Home Office</td>
+                      <td>Late</td>
+                      <td>8 years</td>
+                    </tr>
+                    <tr>
+                      <td>ISL 12025</td>
+                      <td>Mohammed Kaium Uddin</td>
+                      <td>Co-Originator</td>
+                      <td>Software & Accounting</td>
+                      <td>Leave</td>
+                      <td>Home Office</td>
+                      <td>Late</td>
+                      <td>8 years</td>
+                    </tr>
+                    <tr>
+                      <td>ISL 12025</td>
+                      <td>Mohammed Kaium Uddin</td>
+                      <td>Co-Originator</td>
+                      <td>Software & Accounting</td>
+                      <td>Leave</td>
+                      <td>Home Office</td>
+                      <td>Late</td>
+                      <td>8 years</td>
+                    </tr>
+                    <tr>
+                      <td>ISL 12025</td>
+                      <td>Mohammed Kaium Uddin</td>
+                      <td>Co-Originator</td>
+                      <td>Software & Accounting</td>
+                      <td>Leave</td>
+                      <td>Home Office</td>
+                      <td>Late</td>
+                      <td>8 years</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- left side end -->
+
+        <!-- right side start -->
+        <div class="col-2 bg-white sidebar">
+          <div class="row">
+            <div class="col-12">
+              <div class="card my-3">
+                <div class="card-body">
+                  <div>
+                    <h4>Filters</h4>
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="attend">Attend</label><br />
+                    <select id="team" class="form-control">
+                        <option value="All">All</option>
+                        <option value="Team 1">Team 1</option>
+                        <option value="Team 2">Team 2</option>
+                        <!-- Add more options as needed -->
+                      </select>
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="from">From</label><br />
+                    <input type="date" id="from" class="form-control" />
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="to">To</label><br />
+                    <input type="date" id="to" class="form-control" />
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="team">Team</label><br />
+                    <select id="team" class="form-control" aria-label="Default select example">
+                      <option value="All">All</option>
+                      <option value="Team 1">Team 1</option>
+                      <option value="Team 2">Team 2</option>
+                      <!-- Add more options as needed -->
+                    </select>
+                  </div>
+
+                  <div class="form-group mb-3">
+                    <div class="row">
+                        <div class="col-md-6 mb-2 mb-md-0">
+                            <a href="#" class="btn btn-danger btn-block">Reset</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="#" class="btn btn-success btn-block">Generate</a>
+                        </div>
+                    </div>
+                </div>
+                
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- right side end -->
+      </div>
+    </div>
+
+    <script src="./bootstrap-5.1.3/js/bootstrap.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
