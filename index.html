@@ -62,12 +62,17 @@
 
 <div class="my-4 px-4">
   <div class="row">
+    <!-- Button to toggle filter section (visible on screens smaller than medium) -->
+    <div class="col-md-4 mb-2 d-md-none"> <!-- Visible only on screens smaller than md -->
+      <button id="filterToggleBtn" class="btn btn-secondary"><i class="fas fa-filter"></i> Toggle Filters</button>
+    </div>
+    
     <!-- Left sidebar -->
     <div class="col-lg-2 col-md-4 order-md-2">
       <div class="sticky-top">
-        <div class="card">
+        <div class="card" id="filterSection">
           <div class="card-body">
-            <h4>Filters</h4>
+            <h4 id="filterToggle">Filters</h4>
             <div class="form-group mb-3">
               <label for="attend">Attend</label><br />
               <select id="team" class="form-control">
@@ -107,7 +112,7 @@
         <div class="card-body">
           <div class="row mb-2">
             <div class="col-sm-4 col-md-6 col-lg-9">
-              <h4 style="font-weight: 600">Leave Report</h4>
+              <h4 style="font-weight: 600">Employee Report</h4>
             </div>
             <div class="col-sm-8 col-md-6 col-lg-3">
               <div class="form-group" style="margin-left: auto;">
@@ -147,55 +152,7 @@
                   <td>8 years</td>
                   <td>01/25/2012</td>
                 </tr>
-                <tr>
-                  <td><input type="checkbox" class="rowCheckbox" /></td>                            
-                  <td>ISL 12025</td>
-                  <td>Mohammed Kaium Uddin</td>
-                  <td>Co-Originator</td>
-                  <td>Software</td>
-                  <td>2 Days</td>
-                  <td>5 Days</td>
-                  <td>Late</td>
-                  <td>8 years</td>
-                  <td>01/25/2012</td>
-                </tr>
-                <tr>
-                  <td><input type="checkbox" class="rowCheckbox" /></td>                            
-                  <td>ISL 12025</td>
-                  <td>Mohammed Kaium Uddin</td>
-                  <td>Co-Originator</td>
-                  <td>Software</td>
-                  <td>-</td>
-                  <td>5 Days</td>
-                  <td>Late</td>
-                  <td>8 years</td>
-                  <td>01/25/2012</td>
-                </tr>
-                <tr>
-                  <td><input type="checkbox" class="rowCheckbox" /></td>                            
-                  <td>ISL 12025</td>
-                  <td>Mohammed Kaium Uddin</td>
-                  <td>Co-Originator</td>
-                  <td>Software</td>
-                  <td>2 Days</td>
-                  <td>5 Days</td>
-                  <td>Late</td>
-                  <td>8 years</td>
-                  <td>01/25/2012</td>
-                </tr>
-                <tr>
-                  <td><input type="checkbox" class="rowCheckbox" /></td>                            
-                  <td>ISL 12025</td>
-                  <td>Mohammed Kaium Uddin</td>
-                  <td>Co-Originator</td>
-                  <td>Software</td>
-                  <td>2 Days</td>
-                  <td>-</td>
-                  <td>Late</td>
-                  <td>8 years</td>
-                  <td>01/25/2012</td>
-                </tr>
-
+                <!-- Additional rows -->
               </tbody>
             </table>
           </div>
@@ -207,6 +164,7 @@
             <button>4</button>
             <button>5</button>
             <button>&gt;</button>
+          </div>
         </div>
       </div>
     </div>
@@ -215,5 +173,21 @@
 
 <!-- Bootstrap JS -->
 <script src="./bootstrap-5.1.3/js/bootstrap.min.js"></script>
+
+  <!-- JavaScript -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const filterToggleBtn = document.getElementById("filterToggleBtn");
+      const filterSection = document.getElementById("filterSection");
+
+      filterToggleBtn.addEventListener("click", function() {
+        if (filterSection.style.display === "none") {
+          filterSection.style.display = "block";
+        } else {
+          filterSection.style.display = "none";
+        }
+      });
+    });
+  </script>
 </body>
 </html>
