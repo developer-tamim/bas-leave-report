@@ -4,7 +4,7 @@
         <!-- Left sidebar -->
         <div class="col-lg-2 col-md-4 order-md-2">
           <div class="sticky-top">
-            <div class="card p-3" id="filterSection">
+            <div class="card p-3">
 
               <!-- Filter -->
               <Filter/>

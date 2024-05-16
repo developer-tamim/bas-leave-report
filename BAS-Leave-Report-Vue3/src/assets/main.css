@@ -4,6 +4,10 @@
     font-family: "Montserrat", sans-serif;
 }
 
+.bold{
+  font-weight: 600;
+}
+
 .tableheader {
   color: white;
   background-color: #19B7A2;

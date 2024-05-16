@@ -2,12 +2,12 @@
     <div>
       <div class="card-body">
         <div class="filter-dropdown mb-3" @click="toggleFilters">
-          <h4>Filter</h4>
+          <h3 class="bold">Filter</h3>
         </div>
         <transition name="fade">
           <div v-if="showFilters">
             <div class="form-group mb-3">
-              <label for="attend">Attend</label><br />
+              <label for="attend" class="bold">Attend</label><br />
               <select id="attend" class="form-control">
                 <option value="All">All</option>
                 <option value="Mohammed Kaium Uddin">Mohammed Kaium Uddin</option>
@@ -15,15 +15,15 @@
               </select>
             </div>
             <div class="form-group mb-3">
-              <label for="from">From</label><br />
+              <label for="from" class="bold">From</label><br />
               <input type="date" id="from" value="2024-01-01" class="form-control" />
             </div>
             <div class="form-group mb-3">
-              <label for="to">To</label><br />
+              <label for="to" class="bold">To</label><br />
               <input type="date" id="to" value="2024-01-30" class="form-control" />
             </div>
             <div class="form-group mb-3">
-              <label for="team">Team</label><br />
+              <label for="team" class="bold">Team</label><br />
               <select id="teamFilter" class="form-control">
                 <option value="All">All</option>
                 <option value="Team 1">Team 1</option>
@@ -31,7 +31,7 @@
               </select>
             </div>
             <div class="form-group mb-3">
-              <button class="btn btn-danger">Reset</button>
+              <button class="btn btn-danger me-2">Reset</button>
               <button class="btn btn-export">Export</button>
             </div>
           </div>

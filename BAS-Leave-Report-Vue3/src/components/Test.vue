@@ -1,14 +1,16 @@
 <template>
-<div>
-    <div class="container">
-        <h1 class="text-danger">test bootstrap</h1>
+    <div>
+      <div class="card m-3 ml-auto" style="width:50%">
+        <div class="card-body">
+            test
+        </div>
+      </div>
     </div>
-</div>
-</template>
-
-<script>
-export default {
-    name: 'Test'
-}
-
-</script>
+  </template>
+  
+  <script>
+  export default {
+     
+  };
+  </script>
+  

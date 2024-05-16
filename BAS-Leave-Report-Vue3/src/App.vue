@@ -1,7 +1,7 @@
 <template>
   <div >
-   <!-- <Test/> -->
-   <LeaveReport></LeaveReport>
+   <Test/>
+   <!-- <LeaveReport></LeaveReport> -->
   </div>
 </template>
 
