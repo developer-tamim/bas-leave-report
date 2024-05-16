@@ -1,0 +1,62 @@
+/* @import './base.css'; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+.tableheader {
+  color: white;
+  background-color: #19B7A2;
+}
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: white;
+}
+.btn-export {
+  background-color: #19B7A2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 7px 15px;
+  cursor: pointer;
+}
+.btn-export:hover {
+  color: white;
+  background-color: #029c88;
+}
+.table-container {
+  max-height: calc(105vh - 200px);
+  overflow-y: auto;
+  overflow-x: auto;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: none;
+  color: #808080;
+  background-color: #fff;
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+.pagination button:hover {
+  background-color: #ececec;
+  color: #808080;
+}
+.pagination button.active {
+  background-color: #e0fffb;
+  color: #19b7a2;
+}
+.pagination button:disabled {
+  background-color: #f9f9f9;
+  color: #ccc;
+  cursor: not-allowed;
+}
