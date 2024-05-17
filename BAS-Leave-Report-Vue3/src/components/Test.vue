@@ -109,32 +109,37 @@
           <div class="row m-2">
            
             <div class="col-5">
-              <div class="row">
-                <div class="col-4">
-                  <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" checked>
-<label class="btn btn-outline-success" for="success-outlined">Leave</label>
-                </div>
-
-                <!-- <div class="col-4">
-                  <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="on" checked>
-<label class="btn btn-outline-success" for="success-outlined">Home</label>
-                </div> -->
-
-                <div class="col-4">
-                  <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
-<label class="btn" for="success-outlined">Late</label>
-                </div>
-
+              <div class="btn-group" role="group" aria-label="Basic outlined example">
+                <button type="button" class="btn btn-outline-primary">Leave 4</button>
+                <button type="button" class="btn btn-outline-primary">Home 7</button>
+                <button type="button" class="btn btn-outline-primary">Late 2</button>
               </div>
             </div>
             <div class="col-2"></div>
             <div class="col-5">
-              <div class="row">
-                <div class="col-4 btn btn-danger">test</div>
-                <div class="col-4 btn btn-danger">test</div>
-                <div class="col-4 btn btn-danger">test</div>
+              <div class="btn-group" role="group" aria-label="Basic outlined example">
+                <button type="button" class="btn">Start to End Date</button>
+                <button type="button" class="btn btn-outline">
+                  <input type="date" style="border:none;">
+                </button>
+                <button type="button" class="btn btn-outline">
+                  <input type="date" style="border:none;">
+                </button>
               </div>
             </div>
+            <!-- <div class="col-5">
+              <div class="row">
+                <div class="col-4">
+                  <span>Start to End Date</span>
+                </div>
+                <div class="col-4">
+                  <input type="date">
+                </div>
+                <div class="col-4">
+                  <input type="date">
+                </div>
+              </div>
+            </div> -->
            
           </div>
         </section>
